@@ -1,11 +1,68 @@
 body {
-    font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", "Segoe UI", Arial, sans-serif;
+    font-family: Consolas,"Helvetica Neue", Helvetica, "Microsoft Yahei", "Segoe UI", Arial, sans-serif;
 }
 
-.demo {
-    margin-left: 200px;
-    margin-top: 200px;
-    height: 200px;
-    width: 200px;
-    background-color: #ff6a00;
+.title {
+    margin-bottom: 50px;
+}
+
+.thumbnail {
+    padding: 20px;
+    min-height: 142px;
+}
+
+    .thumbnail .flag {
+        width: 20px;
+        height: 20px;
+        margin-top: 50px;
+        background-image: url(../img/flags.png);
+        background-repeat: no-repeat;
+        background-size: 500% 200%;
+        background-position: 0 100%;
+    }
+
+    .thumbnail .picture {
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/picture.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .thumbnail .box {
+        height: 100px;
+        width: 100px;
+    }
+
+.bubble {
+    height: 20px;
+    width: 20px;
+    margin-top: 80px;
+    border-radius: 50%;
+}
+
+.thumbnail.tag {
+    background-color: #428bca;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.color-primary {
+    background-color: #428bca;
+}
+
+.color-success {
+    background-color: #5cb85c;
+}
+
+.color-warning {
+    background-color: #f0ad4e;
+}
+
+.color-danger {
+    background-color: #d9534f;
+}
+
+.color-info {
+    background-color: #5bc0de;
 }

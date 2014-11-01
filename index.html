@@ -5,13 +5,295 @@
     <meta content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <title>Newegg CSS3 Framework Demo</title>
-    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/core/animation.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <h1>Newegg CSS3 Framework Demo</h1>
-    <div>
-        <div class="demo nec-ani-scale-up-center nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+    <div class="container">
+        <h1 class="text-center title">Newegg CSS3 Framework Demo</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">用法</h3>
+            </div>
+            <div class="panel-body">
+                <ol>
+                    <li>引用animation.css</li>
+                    <li>添加nec-ani-*的动画样式、nec-ani-duration*的持续时间样式(可选)、nec-ani-delay*的延迟样式(可选)或nec-ani-iteration-*的循环次数样式</li>
+                </ol>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Bubble冒泡</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="bubble center-block color-info nec-ani-bubble nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-bubble</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Fade渐变</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-fadeIn nec-ani-duration2000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-fadeIn</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-fadeOut nec-ani-duration2000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-fadeOut</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Flag Wave彩带飘落</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="flag center-block nec-ani-flagWave nec-ani-duration8000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-flagWave</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Floating Tag浮动标签</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail tag">
+                            <div class="center-block nec-ani-tagFloatingLeft nec-ani-duration2000 nec-ani-iteration-infinite">
+                                CSS3
+                            </div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-tagFloatingLeft</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail tag">
+                            <div class="center-block nec-ani-tagFloatingRight nec-ani-duration2000 nec-ani-iteration-infinite">
+                                CSS3
+                            </div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-tagFloatingRight</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Move平移</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromLeft nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromLeft</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromRight nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromRight</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromTop nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromTop</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromBottom nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromBottom</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToLeft nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToLeft</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToRight nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToRight</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToTop nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToTop</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToBottom nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToBottom</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">MoveFade渐变平移</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromLeftFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromLeftFade</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromRightFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromRightFade</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromTopFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromTopFade</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveFromBottomFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveFromBottomFade</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToLeftFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToLeftFade</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToRightFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToRightFade</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToTopFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToTopFade</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveToBottomFade nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveToBottomFade</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">MoveSpring弹簧平移</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveUpDownSpring nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveUpDownSpring</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-moveLeftRightSpring nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-moveLeftRightSpring</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Rotate旋转</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-rotateLeft nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-rotateLeft</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-rotateRight nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-rotateRight</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Scale缩放</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-scaleUpCenter nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-scaleUpCenter</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-scaleDownCenter nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-scaleDownCenter</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-scaleDown nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-scaleDown</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <div class="box center-block color-warning nec-ani-scaleUp nec-ani-duration1000 nec-ani-iteration-infinite"></div>
+                        </div>
+                        <h4 class="text-center">.nec-ani-scaleUp</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center">by Bean</footer>
     </div>
 </body>
 </html>

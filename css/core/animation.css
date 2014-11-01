@@ -1,46 +1,18 @@
-/* rotate */
-.nec-ani-rotate {
-    -webkit-animation: rotate 2s linear infinite both;
-    animation: rotate 2s linear infinite both;
-}
-
-@-webkit-keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
 /* bubble */
 .nec-ani-bubble {
     -webkit-animation: bubble 1.3s ease-out infinite both;
     animation: bubble 1.3s ease-out infinite both;
 }
 
-/* floating tag */
-.nec-ani-tagFloatingLeft {
-    -webkit-animation: tagFloatingLeft 5s linear infinite both;
-    animation: tagFloatingLeft 5s linear infinite both;
+/* fade */
+.nec-ani-fadeIn {
+    -webkit-animation: fadeIn .7s ease-in both;
+    animation: fadeIn .7s ease-in both;
 }
 
-.nec-ani-tagFloatingRight {
-    -webkit-animation: tagFloatingRight 5s linear infinite both;
-    animation: tagFloatingRight 5s linear infinite both;
+.nec-ani-fadeOut {
+    -webkit-animation: fadeOut .7s ease-out both;
+    animation: fadeOut .7s ease-out both;
 }
 
 /* flag wave*/
@@ -49,78 +21,17 @@
     animation: flagWave 8s linear both infinite;
 }
 
-/* scale and fade */
-.nec-ani-scaleDown {
-    -webkit-animation: scaleDown .7s ease both;
-    animation: scaleDown .7s ease both;
+/* floating tag */
+.nec-ani-tagFloatingLeft {
+    transform-origin: center center;
+    -webkit-animation: tagFloatingLeft 5s linear infinite both;
+    animation: tagFloatingLeft 5s linear infinite both;
 }
 
-.nec-ani-scaleUp {
-    -webkit-animation: scaleUp .7s ease both;
-    animation: scaleUp .7s ease both;
-}
-
-.nec-ani-scaleDownUp {
-    -webkit-animation: scaleDownUp .7s ease both;
-    animation: scaleDownUp .7s ease both;
-}
-
-.nec-ani-scaleUpDown {
-    -webkit-animation: scaleUpDown .7s ease both;
-    animation: scaleUpDown .7s ease both;
-}
-
-/* fade */
-.nec-ani-fadeIn {
-    -webkit-animation: fadeIn .7s ease both;
-    animation: fadeIn .7s ease both;
-}
-
-.nec-ani-fadeOut {
-    -webkit-animation: fadeOut .7s ease both;
-    animation: fadeOut .7s ease both;
-}
-
-/* move from fade */
-.nec-ani-moveFromLeftFade {
-    -webkit-animation: moveFromLeftFade .7s ease both;
-    animation: moveFromLeftFade .7s ease both;
-}
-
-.nec-ani-moveFromRightFade {
-    -webkit-animation: moveFromRightFade .7s ease both;
-    animation: moveFromRightFade .7s ease both;
-}
-
-.nec-ani-moveFromTopFade {
-    -webkit-animation: moveFromTopFade .7s ease both;
-    animation: moveFromTopFade .7s ease both;
-}
-
-.nec-ani-moveFromBottomFade {
-    -webkit-animation: moveFromBottomFade .7s ease both;
-    animation: moveFromBottomFade .7s ease both;
-}
-
-/* move to fade */
-.nec-ani-moveToLeftFade {
-    -webkit-animation: moveToLeftFade .7s ease both;
-    animation: moveToLeftFade .7s ease both;
-}
-
-.nec-ani-moveToRightFade {
-    -webkit-animation: moveToRightFade .7s ease both;
-    animation: moveToRightFade .7s ease both;
-}
-
-.nec-ani-moveToTopFade {
-    -webkit-animation: moveToTopFade .7s ease both;
-    animation: moveToTopFade .7s ease both;
-}
-
-.nec-ani-moveToBottomFade {
-    -webkit-animation: moveToBottomFade .7s ease both;
-    animation: moveToBottomFade .7s ease both;
+.nec-ani-tagFloatingRight {
+    transform-origin: center center;
+    -webkit-animation: tagFloatingRight 5s linear infinite both;
+    animation: tagFloatingRight 5s linear infinite both;
 }
 
 /* move from */
@@ -165,6 +76,48 @@
     animation: moveToBottom .6s ease both;
 }
 
+/* move from fade */
+.nec-ani-moveFromLeftFade {
+    -webkit-animation: moveFromLeftFade .7s ease-in both;
+    animation: moveFromLeftFade .7s ease-in both;
+}
+
+.nec-ani-moveFromRightFade {
+    -webkit-animation: moveFromRightFade .7s ease-in both;
+    animation: moveFromRightFade .7s ease-in both;
+}
+
+.nec-ani-moveFromTopFade {
+    -webkit-animation: moveFromTopFade .7s ease-in both;
+    animation: moveFromTopFade .7s ease-in both;
+}
+
+.nec-ani-moveFromBottomFade {
+    -webkit-animation: moveFromBottomFade .7s ease-in both;
+    animation: moveFromBottomFade .7s ease-in both;
+}
+
+/* move to fade */
+.nec-ani-moveToLeftFade {
+    -webkit-animation: moveToLeftFade .7s ease-out both;
+    animation: moveToLeftFade .7s ease-out both;
+}
+
+.nec-ani-moveToRightFade {
+    -webkit-animation: moveToRightFade .7s ease-out both;
+    animation: moveToRightFade .7s ease-out both;
+}
+
+.nec-ani-moveToTopFade {
+    -webkit-animation: moveToTopFade .7s ease-out both;
+    animation: moveToTopFade .7s ease-out both;
+}
+
+.nec-ani-moveToBottomFade {
+    -webkit-animation: moveToBottomFade .7s ease-out both;
+    animation: moveToBottomFade .7s ease-out both;
+}
+
 /* spring move */
 .nec-ani-moveUpDownSpring {
     -webkit-animation: moveUpDownSpring ease-in-out 1.2s both;
@@ -176,14 +129,37 @@
     animation: moveLeftRightSpring ease-in-out 1.2s both;
 }
 
-.nec-ani-flipInLeft {
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-animation: flipInLeft .5s both ease-out;
-    animation: flipInLeft .5s both ease-out;
+/* rotate */
+.nec-ani-rotateRight {
+    -webkit-animation: rotateRight 2s linear infinite both;
+    animation: rotateRight 2s linear infinite both;
 }
 
+.nec-ani-rotateLeft {
+    -webkit-animation: rotateLeft 2s linear infinite both;
+    animation: rotateLeft 2s linear infinite both;
+}
 
+/* scale */
+.nec-ani-scaleDown {
+    -webkit-animation: scaleDown .7s ease both;
+    animation: scaleDown .7s ease both;
+}
+
+.nec-ani-scaleUpCenter {
+    -webkit-animation: scaleUpCenter .7s ease both;
+    animation: scaleUpCenter .7s ease both;
+}
+
+.nec-ani-scaleUp {
+    -webkit-animation: scaleUp .7s ease both;
+    animation: scaleUp .7s ease both;
+}
+
+.nec-ani-scaleDownCenter {
+    -webkit-animation: scaleDownCenter .7s ease both;
+    animation: scaleDownCenter .7s ease both;
+}
 
 /* animation duration */
 .nec-ani-duration100 {
@@ -234,6 +210,56 @@
 .nec-ani-duration1000 {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
+}
+
+.nec-ani-duration1100 {
+    -webkit-animation-duration: 1.1s;
+    animation-duration: 1.1s;
+}
+
+.nec-ani-duration1200 {
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+}
+
+.nec-ani-duration1300 {
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+.nec-ani-duration1400 {
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+}
+
+.nec-ani-duration1500 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+.nec-ani-duration1600 {
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+}
+
+.nec-ani-duration1700 {
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+.nec-ani-duration1800 {
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+}
+
+.nec-ani-duration1900 {
+    -webkit-animation-duration: 1.9s;
+    animation-duration: 1.9s;
+}
+
+.nec-ani-duration2000 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 /* animation iteration count */
@@ -771,7 +797,7 @@
     }
 }
 
-@-webkit-keyframes scaleUp {
+@-webkit-keyframes scaleUpCenter {
     0% {
         opacity: 0;
         -webkit-transform: scale(.1);
@@ -788,7 +814,7 @@
     }
 }
 
-@keyframes scaleUp {
+@keyframes scaleUpCenter {
     0% {
         opacity: 0;
         -webkit-transform: scale(.1);
@@ -808,14 +834,14 @@
     }
 }
 
-@-webkit-keyframes scaleUpDown {
+@-webkit-keyframes scaleDownCenter {
     0% {
         opacity: 0;
         -webkit-transform: scale(1.2);
     }
 }
 
-@keyframes scaleUpDown {
+@keyframes scaleDownCenter {
     0% {
         opacity: 0;
         -webkit-transform: scale(1.2);
@@ -823,7 +849,7 @@
     }
 }
 
-@-webkit-keyframes scaleDownUp {
+@-webkit-keyframes scaleUp {
     0% {
     }
 
@@ -833,7 +859,7 @@
     }
 }
 
-@keyframes scaleDownUp {
+@keyframes scaleUp {
     0% {
     }
 
@@ -977,22 +1003,6 @@
         transform: translateX(0%);
     }
 }
-
-@-webkit-keyframes flipInLeft {
-    0% {
-        -webkit-transform: translateZ(-1000px) rotateY(-90deg);
-        opacity: 0.2;
-    }
-}
-
-@keyframes flipInLeft {
-    0% {
-        -webkit-transform: translateZ(-1000px) rotateY(-90deg);
-        transform: translateZ(-1000px) rotateY(-90deg);
-        opacity: 0.2;
-    }
-}
-
 
 @-webkit-keyframes flagWave {
     0% {
@@ -1243,5 +1253,50 @@
     100% {
         opacity: 0;
         -webkit-transform: translate(-50%, -500%);
+    }
+}
+
+
+@-webkit-keyframes rotateRight {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateRight {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotateLeft {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotateLeft {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
 }
