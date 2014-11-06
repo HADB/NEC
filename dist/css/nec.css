@@ -34,6 +34,12 @@
     animation: tagFloatingRight 5s linear infinite both;
 }
 
+/* matrix glass */
+.nec-ani-matrixGlass {
+    -webkit-animation: fadeIn 0.5s linear both, matrixGlass 8s linear infinite both;
+    animation: fadeIn 0.5s linear both, matrixGlass 8s linear infinite both;
+}
+
 /* move from */
 .nec-ani-moveFromLeft {
     -webkit-animation: moveFromLeft .6s ease both;
@@ -1298,5 +1304,25 @@
     100% {
         -webkit-transform: rotate(-360deg);
         transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes matrixGlass {
+    0% {
+        background-position-y: 0%;
+    }
+
+    100% {
+        background-position-y: -500%;
+    }
+}
+
+@keyframes matrixGlass {
+    0% {
+        background-position-y: 0%;
+    }
+
+    100% {
+        background-position-y: -500%;
     }
 }
